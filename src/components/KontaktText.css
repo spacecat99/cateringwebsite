@@ -1,0 +1,206 @@
+.container-kontakt-info{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vh;
+    background-color: #242424;
+}
+
+.container-kontakt-info >img{
+    padding-top:6vh;    
+    position: relative;
+    width: 60%;
+    z-index: 0;  
+    filter: brightness(86%);
+    object-fit: cover; 
+}
+.container-kontakt-row{
+    display: flex;
+    flex-direction:row;
+    justify-content:end;
+    align-items: start;
+    background-color: #242424;
+}
+
+.container-kontakt-links{    
+    width: 60%;    
+    background-color: #242424;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #e9e9e9;
+}
+
+.container-kontakt-rechts{
+    width: 40%;
+    padding-left: 2vh;
+    background-color: #242424;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #e9e9e9;
+}
+
+ .container-kontakt-rechts > h1{
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-align: left;
+    width: 87%;
+    padding-bottom: 2vh;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 29px;
+    letter-spacing: 0;
+ }
+
+ .container-kontakt-links > h1{
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-align: left;
+    width: 87%;
+    padding-bottom: 2vh;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 29px;
+    letter-spacing: 0;
+ }
+
+ .container-kontakt-row > p{
+    list-style-type: none;    
+    padding-bottom: 2vh;    
+}
+@media screen and (min-width: 768px) {
+.container-kontakt-links > p{
+  width: 80%;
+}
+.container-kontakt-row{
+  padding: 0 5vh 3vh 5vh;
+}
+
+}
+
+
+/*KontaktCombine part */
+
+.flex-container-kc {
+    display: flex;
+    justify-content: space-between; /* Space between the components */
+    align-items: start; /* Align items vertically centered */
+    width: 100%; /* Full width of the parent container */
+    background-color: #242424;
+    padding-top: 11vh;
+  }
+  .flex-container-kc > img{
+    display: none;
+        overflow: hidden;
+  }
+  
+  .left-component-kc {
+    flex: 1.1; /* Takes up 50% of the space */
+    /* Any additional styling for the left component */
+  }
+  
+  .right-component-kc {
+    flex: 0.9; /* Takes up 50% of the space */
+    /* Any additional styling for the right component */
+    padding-left: 5vh;
+  }
+  
+  .right-component-kc > h1{
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-align: left;
+    width: 87%;
+    padding-bottom: 2vh;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 29px;
+    letter-spacing: 0;    
+ }
+
+ 
+
+
+@media screen and (max-width: 768px) {
+
+    .container-kontakt-info{
+        
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    
+    .container-kontakt-links{
+      padding: 2vh;
+      width: 90%;
+    }
+    .container-kontakt-rechts{
+        padding: 2vh;
+        width: 100%;
+      }
+  
+    .container-kontakt-links > h1{
+      padding-bottom: 2vh;
+      text-transform: uppercase;
+      font-size: 23px;
+    }
+
+    .container-kontakt-rechts > h1{
+        padding-bottom: 2vh;
+        text-transform: uppercase;
+        font-size: 23px;        
+      }
+
+      .right-component-kc > h1{
+        padding-left: 2vh;
+        padding-bottom: 2vh;
+        text-transform: uppercase;
+        font-size: 23px;
+      }
+  
+      .container-kontakt-row > p{        
+        font-size: 15px;
+    }    
+
+    .container-kontakt-info >img{
+        display: none;
+        overflow: hidden;
+    } 
+
+    
+ 
+    
+        .flex-container-kc {
+          flex-direction: column; /* Stack everything vertically */
+          justify-content: center;
+          padding-top: 0;
+        }
+      
+        .flex-container-kc > img {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 20vh;
+          margin-bottom: 2vh;          
+          filter: brightness(86%);
+          z-index: 1;
+          object-fit: cover;  
+        }
+      
+        .container-kontakt-row {
+          flex-direction: column; /* Stack text blocks vertically */
+          gap: 10px; /* Optional: Reduce gap between text blocks */
+          
+        }
+
+        .right-component-kc{
+            padding-left: 5vh;
+            padding-top: 5vh;
+        }
+        
+        .left-component-kc, .right-component-kc {
+          flex: none;          
+        }
+      
+    
+    
+}

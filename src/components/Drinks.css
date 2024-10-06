@@ -1,0 +1,168 @@
+
+.klassiker-wrapper{
+    background-color:  #242424;
+    padding-top: 8vh;
+    position: relative;
+    display: block;
+}
+
+.drinks-text-wrapper > h2{
+    padding: 10vh;
+    font-size: 30px;
+    text-align: center;
+    color: antiquewhite;
+    text-transform:uppercase;
+}
+
+.klassiker-text-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.klassiker-text-wrapper > p {
+
+    font-size: 16px;
+    margin: 0; /* Remove default margin from paragraphs */
+    line-height: 35px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    color: antiquewhite;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 60%;
+}
+
+
+
+.drinks-wrapper{
+display: grid;
+grid-template-columns: repeat(3, auto);
+grid-gap: 10px;
+list-style: none;
+text-align: center;
+justify-content: center;
+
+}
+
+.drinks-image-wrapper{
+    z-index: 1;  
+    position: relative;
+    width: 250px;
+    height: 400px;    
+    filter: brightness(86%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px 5px;
+    margin-left: auto;
+    margin-right: auto;    
+    transition: all .3s ease;
+}
+
+.drinks-image-wrapper > img{    
+    width: auto;
+    height: 100%;
+    filter: brightness(86%);
+}
+
+.drinks__text > h4{
+    text-transform: uppercase ;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color:antiquewhite;
+    padding-bottom: 5%;
+}
+.drink-item{
+    max-width: 245px;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .drinks-image-wrapper {
+        object-fit: none;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .klassiker-wrapper{
+        padding-top: 0px;
+    }
+
+    .klassiker-text-wrapper{
+        align-content: center;
+    }
+    .klassiker-text-wrapper > p {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        width: 95%;
+        padding: 10vh 0 10vh;
+        letter-spacing: 2px;       
+    }
+
+.drinks-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .drinks-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: auto;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        }
+
+    .drinks-image-wrapper{
+        z-index: +1;  
+        position: relative;
+        width: 150px;
+        height: 250px;
+        filter: brightness(86%);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 2vh;
+        margin-left: auto;
+        margin-right: auto;        
+        transition: all .3s ease;
+    }
+
+    .drinks__text > h4{
+        text-transform: uppercase ;        
+        position: relative;
+        font-size: 12px;
+        line-height:14px;
+        font-weight: 500;
+        padding-top: 4%;
+        letter-spacing: 0.5px;
+        color:antiquewhite;
+        
+    }
+
+    .drink-item{
+        max-width: 145px;
+    }
+    .klassiker-wrapper > h1{  
+        padding: 0 0 10vh;      
+        font-size: 10vw;        
+    }
+    .drinks-text-wrapper > h2{
+        padding: 10%;
+        font-size: 25px;
+        text-align: center;
+        color: antiquewhite;
+        text-transform:uppercase;
+    }
+    
+}

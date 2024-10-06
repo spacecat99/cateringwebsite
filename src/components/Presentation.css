@@ -1,0 +1,262 @@
+
+.Presentation-container{
+    background-color: #B0B69B;
+    padding: 4rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  /* PHONE */
+  @media screen and (max-width: 999.99px) {
+
+    .Valerio-container{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Valerio-container-text{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .Valerio-container-text > h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        width: 100%;        
+        font-family: 'Tomorrow', sans-serif;        
+      }
+      .Valerio-container-text > h3 {
+        color: #676861;        
+        width: 80%;
+        padding-bottom: 20px;
+        font-family: 'Tomorrow', sans-serif;
+        font-size: 14px ;
+      }
+  
+      .Valerio-container-text > p {
+        color: #676861;
+        text-align: justify;
+        padding-bottom: 14px;
+        font-size: 12px;
+          width: 100%;
+          line-height: 20px;
+          font-family: 'Tomorrow', sans-serif;
+      }
+      .Valerio-container-img > img{
+        align-items: center;
+        position: relative;
+        z-index: 0; 
+        width: 200px; 
+        height:  auto;
+        padding-bottom: 5vh;
+        }
+
+        .Valerio-container-img > .pdf-container{
+          display: none;
+        }
+
+        .pdf-container2{
+          display: flex;
+        }
+
+        .Mario-container{
+            display: flex;
+            flex-direction:column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Mario-container-text{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+    
+         .Mario-container-text > h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 20px;
+            width: 100%;            
+            font-family: 'Tomorrow', sans-serif;            
+          }
+          .Mario-container-text > h3 {
+            color: #676861;        
+            width: 80%;
+            padding-bottom: 20px;
+            font-family: 'Tomorrow', sans-serif;
+            font-size: 14px ;
+          }
+      
+          .Mario-container-text > p {
+            color: #676861;
+            text-align: justify;
+            padding-bottom: 14px;
+            font-size: 12px;
+              width: 100%;
+              line-height: 20px;
+              font-family: 'Tomorrow', sans-serif;
+          }
+          .Mario-container > .mario__img1{
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 0; 
+            width: 200px; 
+            height:  auto;
+            padding-top: 10vh;
+            padding-bottom: 5vh;
+            }
+                   
+          .mario__img2{
+              display: none;
+          }
+        
+  }
+
+   /*DESKTOP */
+   @media screen and (min-width: 1000px) {
+
+    .mario__img1{
+      display: none;
+  }
+
+    .Valerio-container{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        width: 80%;
+        padding-bottom:10vh;
+    }
+    .Valerio-container-text{
+        display: block;
+        width: 70%;
+    }
+
+    .Valerio-container-text > h2 {
+        color: rgb(244, 243, 242);
+        text-transform: uppercase;
+        text-align: left;
+        width: 80%;
+        padding-bottom: 5px;
+        font-family: 'Tomorrow', sans-serif;
+        font-size: 30px;
+      }
+
+      .Valerio-container-text > h3 {
+        color: #676861;        
+        text-align: left;
+        width: 80%;
+        padding-bottom: 20px;
+        font-family: 'Tomorrow', sans-serif;
+        font-size: 17px ;
+      }
+
+    .Valerio-container-text > p {
+        color: #676861;
+        text-align: justify;
+        padding-bottom: 14px;
+        font-size: 14px;
+          width: 87%;
+          line-height: 23px;
+          font-family: 'Tomorrow', sans-serif;
+      }
+
+      .Valerio-container-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 60px;
+      }
+        .Valerio-container-img > img{
+        align-items: center;
+        position: relative;
+        z-index: 0; 
+        width: auto; 
+        height: 360px;   
+        padding-bottom: 5vh;     
+        }
+        .Valerio-container-img > .pdf-container{
+          display: flex;
+          justify-content: center;
+        }
+        .pdf-container2{
+          display: none;
+        }
+
+     
+
+        .Mario-container{
+            display: flex;
+            flex-direction:row;            
+            justify-content: center;
+            width: 80%;
+        }
+
+        .Mario-container-text{
+            display: block;
+            width: 70%;
+        }
+    
+        .Mario-container-text > h2 {
+          color: rgb(244, 243, 242);
+          text-transform: uppercase;
+            text-align: right;
+            width: 87%;
+            padding-bottom: 5px;
+            font-family: 'Tomorrow', sans-serif;
+            font-size: 30px;
+          }
+
+          .Mario-container-text > h3 {
+            color: #676861;        
+            text-align: right;
+            width: 87%;
+            padding-bottom: 20px;
+            font-family: 'Tomorrow', sans-serif;
+            font-size: 17px ;
+          }
+    
+        .Mario-container-text > p {
+            color: #676861;
+            text-align: justify; 
+            padding-bottom: 14px;          
+            font-size: 14px;
+            width: 87%;
+            line-height: 23px;
+            font-family: 'Tomorrow', sans-serif;            
+          }
+          
+            .Mario-container > img{
+            align-items: center;
+            position: relative;
+            z-index: 0; 
+            width: auto; 
+            height: 360px;
+            float: left;
+            }
+
+            .Mario-container-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 60px;
+      }
+        .Mario-container-img > img{
+        align-items: center;
+        position: relative;
+        z-index: 0; 
+        width: auto; 
+        height: 360px;   
+        padding-bottom: 5vh;     
+        }
+        .Mario-container-img > .pdf-container{
+          display: flex;
+          justify-content: center;
+        }
+            
+   }

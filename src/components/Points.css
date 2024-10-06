@@ -1,0 +1,116 @@
+.points-container {
+    background-color: #242424;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .Points-subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin-bottom: 24px;
+    padding: 24px;
+    color: #de6836;
+  }
+
+  .points-image-container > img{
+    object-fit: cover;
+  width: 100%;
+  }
+
+  /* PHONE */
+  @media screen and (max-width: 768px) {
+    .Points-subscription > h2 {
+      text-transform: uppercase;
+      font-size: 15px;
+      width: 80%;
+      padding-bottom: 20px;
+      font-family: 'Tomorrow', sans-serif;
+    }
+
+    .Points-subscription >ul {
+        width: 80%;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Tomorrow', sans-serif;
+        text-align:left;
+        color: antiquewhite;
+    }
+
+    .points-image-container > img{
+      height: 20vh;
+      z-index: 0;
+      align-items: center;
+      position: relative;
+      filter: brightness(86%);
+      
+    }
+
+    .points-image-container{
+      width: 100%;
+      overflow: hidden;
+      padding-top: 5vh;
+    }
+  }
+
+  
+  /*DESKTOP */
+  @media screen and (min-width: 768px) {
+  .Points-subscription > h2 {
+    padding-bottom: 14px;
+    font-size: 22px;
+    width: 56%;  
+    text-transform: uppercase;
+    font-family: 'Tomorrow', sans-serif;
+  }
+
+  .Points-subscription > h3 {
+    padding-bottom: 14px;
+    font-size: 22px;
+    text-align: left;
+    width: 32%;  
+    text-transform: uppercase;
+    font-family: 'Tomorrow', sans-serif;
+  }
+
+  .points-image-container{
+    width: 100%;
+    padding-top: 10vh;
+  }
+  .points-image-container > img{
+    
+    align-items: center;
+    position: relative;
+    z-index: 0;  
+    filter: brightness(86%);
+    height: 50vh;    
+  }
+  
+  .Points-subscription >ul {
+    color: antiquewhite;
+    width: 35%;
+    text-align: left;
+    padding-bottom: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Tomorrow', sans-serif;
+  }
+  
+  .Points-subscription-heading {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  
+  .Points-subscription-text {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+
+}

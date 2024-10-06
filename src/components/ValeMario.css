@@ -1,0 +1,203 @@
+.grupfoto{  
+  width: 45%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupfoto > img{
+  position: relative;
+  width: 80%;
+  height: auto;
+  z-index: 0;  
+  filter: brightness(86%);
+  }
+
+  .grupfoto2{
+    display: none;
+  }
+
+
+  .vm-container{
+    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    height: 90vh;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:start;    
+    padding-top: 10vh; 
+    overflow: hidden;     
+  }
+
+  .title-container-vm{
+    position: relative;
+    width: 55%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: contain;
+    align-items: center;
+    overflow: hidden;
+}
+  
+    
+  .title-container-vm > h1 {
+    font-family: Ambroise Std Firmin;
+    letter-spacing: -31;
+    color: #fff;
+    font-size: 60px;   
+  }
+    
+  .title-container-vm > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 7%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: italic;
+  }
+  
+  'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans',
+
+
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    
+    .vm-container{       
+      background-color:#242424;
+    }
+    
+    .title-container-vm > p {
+      text-align: left;
+      clear: right;
+    }
+    
+    .title-container-vm > h4 {
+      padding-top:6%;
+      padding-bottom: 0;
+      font-size: 18px;
+      font-weight: 10;
+      letter-spacing: 2px;
+      color: #fff;      
+      }
+
+      .title-container-vm > span {
+        font-size: 100px;
+        color: #fff;
+        padding: 0;
+      } 
+
+    .title-container-vm > p4 {
+      font-family: 'Tomorrow', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+      font-size: 15px;
+      padding-top: 100px;
+      padding-left: 30px;
+      text-align: center;
+      ;
+    }
+    .grupfoto2{
+      display: block;
+      position: fixed;
+      top: 7vh;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+      object-fit: contain;
+      overflow: hidden;
+      
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+
+    .vm-container{    
+    height: 50vh;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    padding-left: 0vh !important;
+    overflow: hidden;
+    }
+
+    .grupfoto {
+      display: none;
+    }
+    
+    .grupfoto2{
+    display: block;
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    object-fit: contain;
+    overflow: hidden;
+    
+  }
+
+  .grupfoto2 > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(76%) !important;
+  }
+    
+    .title-container-vm > h4 {
+      padding-top: 10vh;      
+      font-size: 12px;
+      font-weight: 10;
+      letter-spacing: 2px;
+      color: #fff;      
+      }
+      .title-container-vm > span {
+        font-size: 50px;
+        color: #fff;
+        padding-bottom: 5vh;
+      } 
+
+    .title-container-vm{
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+      width: 100%;
+      padding-top: 5vh ;     
+      padding-right: 0vh;
+    
+    }
+    .title-container-vm > h1 {
+      font-size: 30px;         
+    }   
+
+    .title-container-vm > p {
+      font-family: 'Tomorrow', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+      font-size:14px;
+      text-align: center;
+      ;
+    }   
+
+    .vm-container-vm > img {
+      width: 35%;
+                  
+    }
+    
+  }
+  
+  

@@ -1,0 +1,192 @@
+.hero-container > img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;  
+  filter: brightness(86%);
+}
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrollbars from appearing */
+  display: flex;
+  justify-content: center; /* Centers the overlay horizontally */
+  align-items: center; /* Centers the overlay vertically */
+  text-align: center; /* Centers text within the overlay */
+}
+
+.hero-container-inspo{
+/* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+position: relative;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+object-fit: contain;
+overflow: hidden;
+}
+
+.video1 > video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 10vh;
+  left: 0;
+  z-index: -1;
+}
+
+.video2{
+  display: none;
+}
+
+.hero-container > img{
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero-overall{
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the overlay */
+  color: white; /* Text color for better readability over the image */
+  z-index: 2; /* Ensures the overlay is in front of the image */
+  text-align: center;
+  width: 100%; /* Ensures the text is contained within the viewport */
+  padding: 0 10px; /* Optional: add padding for better readability */
+}
+
+
+
+.hero-title > h2 {
+  font-family: Ambroise Std Firmin;
+  letter-spacing: -31;
+  color: #fff;
+  text-align: center;
+  font-size:80px;
+  margin-top: 0;
+
+}
+.hero-title > h1 {
+  font-family: Ambroise Std Firmin;
+  letter-spacing: -31;
+  color: #fff;
+  font-size: 150px;
+  
+}
+
+.hero-title > h3 {
+  margin-top: -15px;
+  letter-spacing: 5;
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.hero-title > p {
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: italic;
+
+}
+
+
+.hero-btns {
+  display: flex;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.hero-more-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 110px;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  
+  /* Hide the laptop video */
+  .video1 {
+    display: none;
+  }
+
+  /* Show the phone video */
+  .video2 {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .video2 > video {
+    object-fit: cover; /* Ensures it still covers the container on mobile */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+  .hero-title >  h1 {
+    font-size: 80px;
+   
+  }
+  .hero-title >  h2{
+    font-size: 50px;
+    
+  }
+
+  .hero-title >  h3{
+    font-size: 35px;
+    
+  }
+  .hero-title > p {
+    font-size: 22px;
+  }
+
+  .btn-mobile {
+    display: block;
+    
+  }
+
+  .btn {
+    width: 100%;
+    ;
+  }
+}
